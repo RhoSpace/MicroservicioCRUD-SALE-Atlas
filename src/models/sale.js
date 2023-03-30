@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const saleSchema = mongoose.Schema({
   productId: {
@@ -19,4 +19,4 @@ const saleSchema = mongoose.Schema({
   }
 },{versionKey: false});
 
-module.exports = mongoose.model('Sale', saleSchema);
+module.exports = mongoose.model('sale', saleSchema);
