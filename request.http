@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/sales HTTP/1.1
+Content-Type: application/json
+
+{
+  "productId": "123456-D",
+  "productType":"Corta Fecha",
+  "saleAmount": 50,
+  "seller": "Pepito"
+}
+
+###
+GET http://localhost:9000/api/sales HTTP/1.1
+
+###
+GET http://localhost:9000/api/sales/6425fdc29c83f5c38e4a621a HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/sales/6426017be91d08154a59038e HTTP/1.1
+
+###
+PUT http://localhost:9000/api/sales/6425fdc29c83f5c38e4a621a HTTP/1.1
+Content-Type: application/json
+
+{
+  "productId": "123456-D",
+  "productType":"Corta Fecha",
+  "saleAmount": 50,
+  "seller": "Pepa"
+}

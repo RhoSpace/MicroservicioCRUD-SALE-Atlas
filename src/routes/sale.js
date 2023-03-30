@@ -33,7 +33,7 @@ router.get("/sales/:id", (req, res) => {
 router.delete("/sales/:id", (req, res) => {
   const { id } = req.params;
   saleSchema
-    .remove({ _id: id })
+    .deleteOne({ _id: id })
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });

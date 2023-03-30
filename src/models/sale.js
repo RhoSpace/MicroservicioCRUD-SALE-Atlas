@@ -19,4 +19,4 @@ const saleSchema = mongoose.Schema({
   }
 },{versionKey: false});
 
-module.exports = mongoose.model('sale', saleSchema);
+module.exports = mongoose.model('Sale', saleSchema);
